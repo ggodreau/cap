@@ -5,10 +5,16 @@ import Layout from '../components/layout'
 import Image from '../components/image'
 import SEO from '../components/seo'
 
+var divStyle = {
+  background: `#ddf8ff`,
+  height: `3px`,
+}
+
 const IndexPage = () => (
   <Layout>
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#00479b" />
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <div style={divStyle}>red div</div>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>

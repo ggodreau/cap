@@ -19,7 +19,14 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div>new div</div>
+        <div
+          style={{
+            background: `#a2b9da`,
+            height: `100px`,
+          }}
+        >
+          new div
+        </div>
         {/*This is the main body*/}
         {/*padding is above left below*/}
         <div
@@ -27,7 +34,7 @@ const Layout = ({ children }) => (
             margin: `0 auto`,
             color: `coral`,
             maxWidth: 960,
-            minHeight: 600,
+            height: 585,
             padding: `0px 1.0875rem 1.45rem`,
             paddingTop: 0,
           }}
