@@ -21,10 +21,11 @@ const Layout = ({ children }) => (
           background: `green`,
         }}
       >
-        <div class="header-stripe"/>
-        <div class="stripe-top-bg"/>
-        <div class="stripe-top">OO</div>
-        <div class="tick-top arrow-right">XX</div>
+        <div class="header-stripe" />
+        <div class="stripe-top-bg" />
+        <div class="stripe-top" />
+        <div class="tick-top arrow-right" />
+        <div class="notch-top" />
         <div class="cap-text">CAPITAL METRO</div>
         <div
           style={{
