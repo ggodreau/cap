@@ -1,3 +1,74 @@
+.stripe-top {
+  left: 0px;
+  right: 0px;
+  height: 100px;
+  background: lightblue;
+  position: absolute;
+  animation: st 15s steps(300, end) 0s infinite;
+  font-family: 'Montserrat', sans-serif;
+}
+.tick-top {
+  transform: rotate(135deg);
+  left: -3px;
+  width: 10px;
+  top: 140px;
+  background: transparemt;
+  position: absolute;
+  animation: tt 15s steps(300, end) 0s infinite;
+  font-family: 'Montserrat', sans-serif;
+}
+.arrow-right {
+  width: 0;
+  height: 0;
+  background: transparent;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid lightblue;
+}
+@keyframes st {
+  0% {
+    left: 0%;
+    right: 0%;
+    width: 0%;
+  }
+  40% {
+    left: 0%;
+    right: 100%;
+    width: 100%;
+  }
+  60% {
+    left: 50%;
+    right: 100%;
+    width: 50%;
+  }
+  80% {
+    left: 50%;
+    right: 100%;
+    width: 50%;
+  }
+  100% {
+    left: 100%;
+    right: 100%;
+    width: 0%;
+  }
+}
+@keyframes tt {
+  0% {
+    left: -1%;
+  }
+  40% {
+    left: 99%;
+  }
+  60% {
+    left: 99%;
+  }
+  80% {
+    left: 99%;
+  }
+  100% {
+    left: 99%;
+  }
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
