@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -22,30 +21,11 @@ const Layout = ({ children }) => (
           background: `green`,
         }}
       >
-        <div class="header-stripe">BBB</div>
+        <div class="header-stripe"/>
+        <div class="stripe-top-bg"/>
         <div class="stripe-top">OO</div>
         <div class="tick-top arrow-right">XX</div>
-        <div class="move-me move-me-3">pinkstuff</div>
-        <div
-          style={{
-            background: `#a2b9da`,
-            height: `85px`,
-            opacity: `1`,
-          }}
-        />
-        <div
-          style={{
-            zIndex: `1`,
-            position: `absolute`,
-            top: `175px`,
-            width: `100%`,
-            textAlign: `center`,
-            color: `white`,
-            fontSize: `48px`,
-          }}
-        >
-          DOIN THANGS
-        </div>
+        <div class="cap-text">CAPITAL METRO</div>
         <div
           style={{
             background: `#83a1d4`,
