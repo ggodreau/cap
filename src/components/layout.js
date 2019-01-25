@@ -19,10 +19,10 @@ const Layout = ({ children }) => (
     render={data => (
       <div
         style={{
-          background: `white`,
+          background: `green`,
         }}
       >
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <div class="header-stripe">BBB</div>
         <div class="stripe-top">OO</div>
         <div class="tick-top arrow-right">XX</div>
         <div class="move-me move-me-3">pinkstuff</div>

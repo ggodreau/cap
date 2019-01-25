@@ -1,17 +1,25 @@
+.header-stripe {
+  top: 0%;
+  height: 15%;
+  width: 100%;
+  position: absolute;
+  background: #00479b;
+}
 .stripe-top {
-  left: 0px;
-  right: 0px;
-  height: 100px;
-  background: lightblue;
+  top: 15%;
+  left: 0%;
+  right: 0%;
+  height: 15%;
+  background: #6089c3;
   position: absolute;
   animation: st 15s steps(300, end) 0s infinite;
   font-family: 'Montserrat', sans-serif;
 }
 .tick-top {
   transform: rotate(135deg);
+  top: 25.81%;
   left: -3px;
   width: 10px;
-  top: 140px;
   background: transparemt;
   position: absolute;
   animation: tt 15s steps(300, end) 0s infinite;
@@ -23,7 +31,7 @@
   background: transparent;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 20px solid lightblue;
+  border-left: 20px solid #6089c3;
 }
 @keyframes st {
   0% {
