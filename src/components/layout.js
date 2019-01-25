@@ -18,10 +18,21 @@ const Layout = ({ children }) => (
       <div id="parent">
         <div id="header">hello</div>
         <div id="upper">
-          <div class="ustripe-top-bg">foo</div>
-          <div class="ustripe-top">bar</div>
+          <div class="ustripe-top-bg" />
+          <div class="ustripe-top" />
+          <div class="ustripe-bot-bg" />
+          <div class="ustripe-bot" />
+          <div class="tick-top" />
+          <div class="tick-bot" />
+          <div class="notch-top" />
+          <div class="notch-bot" />
+          <div class="cap-text">CAPITAL METRO</div>
         </div>
-        <div id="middle">im feeling</div>
+        <div id="break" />
+        <div id="middle">
+          <div>foo</div>
+          <div>bar</div>
+        </div>
         <div id="bottom">alright today</div>
       </div>
     )}

@@ -12,25 +12,30 @@ body {
   opacity: 1;
 }
 #header {
-  height: 10%;
+  height: 8%;
   width: 100%;
   background: red;
   opacity: 0.9;
 }
 #upper {
-  height: 20%;
+  height: 27%;
   width: 100%;
   background: blue;
   opacity: 0.9;
 }
+#break {
+  height: 0.3%;
+  width: 100%;
+  background: #ddf8ff;
+}
 #middle {
-  height: 30%;
+  height: 62%;
   width: 100%;
   background: green;
   opacity: 0.9;
 }
 #bottom {
-  height: 50%;
+  height: 14%;
   width: 100%;
   background: pink;
   opacity: 0.9;
@@ -38,13 +43,13 @@ body {
 .cap-text {
   font-family: 'Lucida Grande', sans-serif;
   z-index: 1;
-  position: absolute;
-  top: 25%;
+  position: relative;
+  top: -205%;
   width: 100%;
   text-align: center;
   color: white;
-  font-weight: bold;
-  font-size: 50px;
+  font-weight: 999;
+  font-size: 52px;
 }
 .stripe-header {
   top: 0%;
@@ -69,42 +74,40 @@ body {
   background: #a2b9da;
 }
 .ustripe-bot {
-  top: 27%;
+  top: -100%;
   left: -5%;
   right: 0%;
-  height: 12%;
+  height: 50%;
   background: #2e64a8;
-  position: absolute;
+  position: relative;
   animation: st 15s steps(300, end) 0s infinite;
   font-family: 'Montserrat', sans-serif;
 }
 .ustripe-bot-bg {
-  top: 27%;
-  left: 0%;
-  width: 100%;
-  height: 12%;
-  position: absolute;
+  top: -50%;
+  height: 50%;
+  position: relative;
   background: #83a1d4;
 }
 .notch-top {
   transform: rotate(135deg);
-  top: 25.5%;
+  top: -187%;
   left: -6%;
   width: 5px;
-  position: absolute;
+  position: relative;
   animation: n 15s steps(300, end) 0s infinite;
-  background: transparemt;
+  background: transparent;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
-  border-left: 7px solid #a2b9da;
+  border-left: 7px solid red; /* #a2b9da;*/
 }
 .tick-top {
   transform: rotate(135deg);
-  top: 24.9%;
+  top: -159%;
   left: -6%;
   width: 5px;
   background: transparemt;
-  position: absolute;
+  position: relative;
   animation: t 15s steps(300, end) 0s infinite;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -112,23 +115,23 @@ body {
 }
 .notch-bot {
   transform: rotate(225deg);
-  top: 26.3%;
+  top: -196.3%;
   left: -6%;
   width: 5px;
-  position: absolute;
+  position: relative;
   animation: n 15s steps(300, end) 0s infinite;
   background: transparemt;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
-  border-left: 7px solid #83a1d4;
+  border-left: 7px solid red; /*#83a1d4;*/
 }
 .tick-bot {
   transform: rotate(225deg);
-  top: 25.9%;
+  top: -170.9%;
   left: -6%;
   width: 5px;
   background: transparemt;
-  position: absolute;
+  position: relative;
   animation: t 15s steps(300, end) 0s infinite;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
