@@ -9,14 +9,14 @@
   font-weight: bold;
   font-size: 50px;
 }
-.header-stripe {
+.stripe-header {
   top: 0%;
   height: 15%;
   width: 100%;
   position: absolute;
   background: #00479b;
 }
-.stripe-top {
+.ustripe-top {
   top: 15%;
   left: -5%;
   right: 0%;
@@ -26,7 +26,7 @@
   animation: st 15s steps(300, end) 0s infinite;
   font-family: 'Montserrat', sans-serif;
 }
-.stripe-top-bg {
+.ustripe-top-bg {
   top: 15%;
   left: 0%;
   width: 100%;
@@ -34,34 +34,71 @@
   position: absolute;
   background: #a2b9da;
 }
+.ustripe-bot {
+  top: 27%;
+  left: -5%;
+  right: 0%;
+  height: 12%;
+  background: #2e64a8;
+  position: absolute;
+  animation: st 15s steps(300, end) 0s infinite;
+  font-family: 'Montserrat', sans-serif;
+}
+.ustripe-bot-bg {
+  top: 27%;
+  left: 0%;
+  width: 100%;
+  height: 12%;
+  position: absolute;
+  background: #83a1d4;
+}
 .notch-top {
   transform: rotate(135deg);
-  top: 24.9%;
-  left: -5%;
+  top: 25.5%;
+  left: -6%;
   width: 5px;
   position: absolute;
-  animation: nt 15s steps(300, end) 0s infinite;
+  animation: n 15s steps(300, end) 0s infinite;
   background: transparemt;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid red;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #a2b9da;
 }
 .tick-top {
   transform: rotate(135deg);
   top: 24.9%;
-  left: -3px;
+  left: -6%;
   width: 5px;
   background: transparemt;
   position: absolute;
-  animation: tt 15s steps(300, end) 0s infinite;
-}
-.arrow-right {
-  width: 0;
-  height: 0;
-  background: transparent;
+  animation: t 15s steps(300, end) 0s infinite;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 10px solid #6089c3;
+}
+.notch-bot {
+  transform: rotate(225deg);
+  top: 26.3%;
+  left: -6%;
+  width: 5px;
+  position: absolute;
+  animation: n 15s steps(300, end) 0s infinite;
+  background: transparemt;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #83a1d4;
+}
+.tick-bot {
+  transform: rotate(225deg);
+  top: 25.9%;
+  left: -6%;
+  width: 5px;
+  background: transparemt;
+  position: absolute;
+  animation: t 15s steps(300, end) 0s infinite;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #2e64a8;
 }
 @keyframes st {
   0% {
@@ -71,28 +108,28 @@
   }
   40% {
     left: -5%;
-    right: 100%;
-    width: 100%;
+    right: 105%;
+    width: 105%;
   }
   60% {
     left: 50%;
-    right: 100%;
+    right: 105%;
     width: 50%;
   }
   80% {
     left: 50%;
-    right: 100%;
+    right: 105%;
     width: 50%;
   }
   100% {
     left: 100%;
-    right: 100%;
+    right: 105%;
     width: 0%;
   }
 }
-@keyframes tt {
+@keyframes t {
   0% {
-    left: -1%;
+    left: -6%;
   }
   40% {
     left: 99%;
@@ -107,21 +144,21 @@
     left: 99%;
   }
 }
-@keyframes nt {
+@keyframes n {
   0% {
-    left: -5%;
+    left: -5.5%;
   }
   40% {
-    left: -5%;
+    left: -5.5%;
   }
   60% {
-    left: 50%;
+    left: 49.8%;
   }
   80% {
-    left: 50%;
+    left: 49.8%;
   }
   100% {
-    left: 100%;
+    left: 99.8%;
   }
 }
 /*html {
