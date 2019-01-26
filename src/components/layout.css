@@ -1,6 +1,8 @@
 html,
 body {
   margin: 0;
+  overflow: hidden;
+  height: 100vh;
 }
 #parent {
   top: 0;
@@ -14,31 +16,50 @@ body {
 #header {
   height: 5%;
   width: 100%;
-  background: #00408c;
-  opacity: 0.9;
+  background: #00479d;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
 }
 #upper {
   height: 27%;
   width: 100%;
   background: green;
-  opacity: 0.9;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
 }
 #break {
   height: 0.3%;
   width: 100%;
   background: #ddf8ff;
+  position: relative;
+  z-index: 1;
 }
 #middle {
   height: 62%;
   width: 100%;
   background: green;
-  opacity: 0.9;
+  opacity: 1;
 }
 #bottom {
   height: 14%;
   width: 100%;
   background: pink;
-  opacity: 0.9;
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+}
+.cap-logo {
+  position: relative;
+  top: 30%;
+  left: 0%;
+  height: 0;
+  width: 0;
+  margin: 0;
+  z-index: 0;
+  opacity: 0.7;
+  animation: logo 5s steps(300, end) 0s infinite;
 }
 .cap-text {
   font-family: 'Lucida Grande', sans-serif;
@@ -223,6 +244,16 @@ body {
   }
   100% {
     left: 99.8%;
+  }
+}
+@keyframes logo {
+  0% {
+    left: -40%;
+    top: 50%;
+  }
+  100% {
+    left: 105%;
+    top: -100%;
   }
 }
 .bstripe-top {
