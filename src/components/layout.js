@@ -227,6 +227,7 @@ const Layout = ({ children }) => (
               </g>
             </svg>
           </div>
+          <div className="show-code">SHOW CODE</div>
           <div className="bstripe-bot" />
           <div className="mid-text">1 LOCAL</div>
         </div>

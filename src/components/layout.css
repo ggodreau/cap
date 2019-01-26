@@ -59,6 +59,19 @@ body {
   margin: 0;
   z-index: 0;
 }
+.show-code {
+  position: relative;
+  top: 39.5%;
+  left: 68%;
+  height: 0;
+  width: 0;
+  font-weight: 999;
+  font-family: 'Lucida Grande', sans-serif;
+  color: black;
+  font-size: 16px;
+  margin: 0;
+  z-index: 0;
+}
 .cap-logo {
   position: relative;
   top: 30%;
@@ -85,7 +98,7 @@ body {
   font-family: 'Lucida Grande', sans-serif;
   z-index: 1;
   position: relative;
-  top: -61%;
+  top: -60%;
   width: 100%;
   text-align: center;
   color: white;
