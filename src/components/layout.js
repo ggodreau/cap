@@ -16,7 +16,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <div id="parent">
-        <div id="header">hello</div>
+        <div id="header" />
         <div id="upper">
           <div class="ustripe-top-bg" />
           <div class="ustripe-top" />
@@ -30,10 +30,17 @@ const Layout = ({ children }) => (
         </div>
         <div id="break" />
         <div id="middle">
-          <div>foo</div>
-          <div>bar</div>
+          <div class="bstripe-top" />
+          <div class="bstripe-bot" />
+          <div class="mid-text">1 LOCAL</div>
         </div>
-        <div id="bottom">alright today</div>
+        <div id="break" />
+        <div id="bottom">
+          <div class="fstripe-top" />
+          <div class="fstripe-bot" />
+          <div class="bot-text shim1">01/23/2019 at 7:57AM</div>
+          <div class="bot-text shim2">Ticket Expiration Date</div>
+        </div>
       </div>
     )}
   />

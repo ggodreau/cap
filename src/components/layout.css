@@ -12,15 +12,15 @@ body {
   opacity: 1;
 }
 #header {
-  height: 8%;
+  height: 5%;
   width: 100%;
-  background: red;
+  background: #00408c;
   opacity: 0.9;
 }
 #upper {
   height: 27%;
   width: 100%;
-  background: blue;
+  background: green;
   opacity: 0.9;
 }
 #break {
@@ -50,6 +50,33 @@ body {
   color: white;
   font-weight: 999;
   font-size: 52px;
+}
+.mid-text {
+  font-family: 'Lucida Grande', sans-serif;
+  z-index: 1;
+  position: relative;
+  top: -61%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 999;
+  font-size: 32px;
+}
+.bot-text {
+  font-family: 'Lucida Grande', sans-serif;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 999;
+  font-size: 22px;
+}
+.shim1 {
+  top: -85%;
+}
+.shim2 {
+  top: -58%;
 }
 .stripe-header {
   top: 0%;
@@ -197,4 +224,24 @@ body {
   100% {
     left: 99.8%;
   }
+}
+.bstripe-top {
+  top: 0;
+  height: 50%;
+  background: #3c75b6;
+  position: relative;
+}
+.bstripe-bot {
+  height: 50%;
+  background: #00479d;
+}
+.fstripe-top {
+  top: 0;
+  height: 50%;
+  background: #afaeaf;
+  position: relative;
+}
+.fstripe-bot {
+  height: 50%;
+  background: #575659;
 }
