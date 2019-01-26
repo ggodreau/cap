@@ -47,8 +47,10 @@ body {
 .cap-logo {
   position: relative;
   top: 30%;
+  left: 0%;
   height: 0;
   z-index: 0;
+  animation: logo 5s steps(300, end) 0s infinite;
 }
 .cap-text {
   font-family: 'Lucida Grande', sans-serif;
@@ -233,6 +235,16 @@ body {
   }
   100% {
     left: 99.8%;
+  }
+}
+@keyframes logo {
+  0% {
+    left: -30%;
+    top: 40%;
+  }
+  100% {
+    left: 70%;
+    top: -100%;
   }
 }
 .bstripe-top {
