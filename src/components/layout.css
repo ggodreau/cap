@@ -22,11 +22,15 @@ body {
   width: 100%;
   background: green;
   opacity: 0.9;
+  position: relative;
+  z-index: 1;
 }
 #break {
   height: 0.3%;
   width: 100%;
   background: #ddf8ff;
+  position: relative;
+  z-index: 1;
 }
 #middle {
   height: 62%;
@@ -39,6 +43,12 @@ body {
   width: 100%;
   background: pink;
   opacity: 0.9;
+}
+.cap-logo {
+  position: relative;
+  top: 30%;
+  height: 0;
+  z-index: 0;
 }
 .cap-text {
   font-family: 'Lucida Grande', sans-serif;

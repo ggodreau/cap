@@ -31,6 +31,11 @@ const Layout = ({ children }) => (
         <div id="break" />
         <div id="middle">
           <div class="bstripe-top" />
+          <div class="cap-logo">
+            <svg height="210" width="400">
+              <path d="M150 0 L75 200 L225 200 Z" />
+            </svg>
+          </div>
           <div class="bstripe-bot" />
           <div class="mid-text">1 LOCAL</div>
         </div>
