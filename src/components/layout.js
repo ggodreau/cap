@@ -3,6 +3,8 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import './layout.css'
 
+var sayhi = () => console.log('hi')
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -42,7 +44,7 @@ const Layout = ({ children }) => (
                 id="hat"
                 fill="gray"
                 stroke="black"
-                stroke-width="0"
+                strokeWidth="0"
                 d="M 47.19,36.98
                        C 47.38,22.61 59.28,19.80 59.28,19.80
                          59.28,19.80 59.47,10.98 59.47,10.98
@@ -230,6 +232,7 @@ const Layout = ({ children }) => (
           <div className="show-code">SHOW CODE</div>
           <div className="bstripe-bot" />
           <div className="mid-text">1 LOCAL</div>
+          <div className="touch-mid" onClick={sayhi} />
         </div>
         <div id="break" />
         <div id="bottom">
