@@ -1,22 +1,18 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
 
 import './layout.css'
 
-var sayhi = () => console.log('hi')
+class Layout extends React.Component {
+  state = {
+    mid: 'notouchy',
+  }
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
+  sayhi() {
+    console.log('hi')
+  }
+
+  render() {
+    return (
       <div id="parent">
         <div id="header" />
         <div id="upper">
@@ -232,7 +228,7 @@ const Layout = ({ children }) => (
           <div className="show-code">SHOW CODE</div>
           <div className="bstripe-bot" />
           <div className="mid-text">1 LOCAL</div>
-          <div className="touch-mid" onClick={sayhi} />
+          <div className="touch-mid" onClick={this.sayhi} />
         </div>
         <div id="break" />
         <div id="bottom">
@@ -242,8 +238,8 @@ const Layout = ({ children }) => (
           <div className="bot-text shim2">Ticket Expiration Date</div>
         </div>
       </div>
-    )}
-  />
-)
+    )
+  }
+}
 
 export default Layout
