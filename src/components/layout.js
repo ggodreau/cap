@@ -1,20 +1,19 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
 
 import './layout.css'
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
+class Layout extends React.Component {
+  state = {
+    midIsActive: false,
+    bstripeTop: '#3f77b0',
+    bstripeBot: '#014b96',
+    fIsActive: false,
+    fstripeTop: '#b2b2b2',
+    fstripeBot: '#979797',
+  }
+
+  render() {
+    return (
       <div id="parent">
         <div id="header" />
         <div id="upper">
@@ -30,7 +29,10 @@ const Layout = ({ children }) => (
         </div>
         <div id="break" />
         <div id="middle">
-          <div className="bstripe-top" />
+          <div
+            className="bstripe-top"
+            style={{ background: this.state.bstripeTop }}
+          />
           <div className="cap-logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +44,7 @@ const Layout = ({ children }) => (
                 id="hat"
                 fill="gray"
                 stroke="black"
-                stroke-width="0"
+                strokeWidth="0"
                 d="M 47.19,36.98
                        C 47.38,22.61 59.28,19.80 59.28,19.80
                          59.28,19.80 59.47,10.98 59.47,10.98
@@ -228,19 +230,64 @@ const Layout = ({ children }) => (
             </svg>
           </div>
           <div className="show-code">SHOW CODE</div>
-          <div className="bstripe-bot" />
+          <div
+            style={{ background: this.state.bstripeBot }}
+            className="bstripe-bot"
+          />
           <div className="mid-text">1 LOCAL</div>
+          <div
+            className="touch-mid"
+            onClick={e => {
+              if (this.state.midIsActive) {
+                this.setState({
+                  bstripeTop: '#3f77b0',
+                  bstripeBot: '#014b96',
+                  midIsActive: false,
+                })
+              } else {
+                this.setState({
+                  bstripeTop: '#e95a52',
+                  bstripeBot: '#e22319',
+                  midIsActive: true,
+                })
+              }
+            }}
+          />
         </div>
         <div id="break" />
         <div id="bottom">
-          <div className="fstripe-top" />
-          <div className="fstripe-bot" />
+          <div
+            className="fstripe-top"
+            style={{ background: this.state.fstripeTop }}
+          />
+          <div
+            className="fstripe-bot"
+            style={{ background: this.state.fstripeBot }}
+          />
           <div className="bot-text shim1">01/23/2019 at 7:57AM</div>
           <div className="bot-text shim2">Ticket Expiration Date</div>
+          <div
+            className="touch-bot"
+            onClick={e => {
+              if (this.state.fIsActive) {
+                this.setState({
+                  fstripeTop: '#b2b2b2',
+                  fstripeBot: '#979797',
+                  fIsActive: false,
+                })
+              } else {
+                this.setState({
+                  fstripeTop: '#feca52',
+                  fstripeBot: '#feb81a',
+                  fIsActive: true,
+                })
+              }
+            }}
+          />
         </div>
       </div>
-    )}
-  />
-)
+    )
+  }
+}
 
 export default Layout

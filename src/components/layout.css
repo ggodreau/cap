@@ -105,6 +105,24 @@ body {
   font-weight: 999;
   font-size: 32px;
 }
+.touch-mid {
+  z-index: 3;
+  position: relative;
+  top: -109%;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  opacity: 0.3;
+}
+.touch-bot {
+  z-index: 4;
+  position: relative;
+  top: -160%;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  opacity: 0.3;
+}
 .bot-text {
   font-family: 'Lucida Grande', sans-serif;
   z-index: 1;
