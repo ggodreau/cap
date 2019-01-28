@@ -7,6 +7,9 @@ class Layout extends React.Component {
     midIsActive: false,
     bstripeTop: '#3f77b0',
     bstripeBot: '#014b96',
+    fIsActive: false,
+    fstripeTop: '#b2b2b2',
+    fstripeBot: '#979797',
   }
 
   render() {
@@ -253,10 +256,34 @@ class Layout extends React.Component {
         </div>
         <div id="break" />
         <div id="bottom">
-          <div className="fstripe-top" />
-          <div className="fstripe-bot" />
+          <div
+            className="fstripe-top"
+            style={{ background: this.state.fstripeTop }}
+          />
+          <div
+            className="fstripe-bot"
+            style={{ background: this.state.fstripeBot }}
+          />
           <div className="bot-text shim1">01/23/2019 at 7:57AM</div>
           <div className="bot-text shim2">Ticket Expiration Date</div>
+          <div
+            className="touch-bot"
+            onClick={e => {
+              if (this.state.fIsActive) {
+                this.setState({
+                  fstripeTop: '#b2b2b2',
+                  fstripeBot: '#979797',
+                  fIsActive: false,
+                })
+              } else {
+                this.setState({
+                  fstripeTop: '#feca52',
+                  fstripeBot: '#feb81a',
+                  fIsActive: true,
+                })
+              }
+            }}
+          />
         </div>
       </div>
     )
