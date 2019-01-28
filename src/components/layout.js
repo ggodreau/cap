@@ -10,6 +10,7 @@ class Layout extends React.Component {
     fIsActive: false,
     fstripeTop: '#b2b2b2',
     fstripeBot: '#979797',
+    fdate: new Date(+new Date() + 2.16e7),
   }
 
   render() {
@@ -264,7 +265,7 @@ class Layout extends React.Component {
             className="fstripe-bot"
             style={{ background: this.state.fstripeBot }}
           />
-          <div className="bot-text shim1">01/23/2019 at 7:57AM</div>
+          <div className="bot-text shim1">{this.state.fdate.toString()}</div>
           <div className="bot-text shim2">Ticket Expiration Date</div>
           <div
             className="touch-bot"
