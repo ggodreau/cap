@@ -235,17 +235,17 @@ class Layout extends React.Component {
           <div
             className="touch-mid"
             onClick={e => {
-              if (!this.state.midIsActive) {
+              if (this.state.midIsActive) {
                 this.setState({
                   bstripeTop: '#3f77b0',
                   bstripeBot: '#014b96',
-                  midIsActive: true,
+                  midIsActive: false,
                 })
               } else {
                 this.setState({
                   bstripeTop: '#e95a52',
                   bstripeBot: '#e22319',
-                  midIsActive: false,
+                  midIsActive: true,
                 })
               }
             }}
