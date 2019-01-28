@@ -4,11 +4,9 @@ import './layout.css'
 
 class Layout extends React.Component {
   state = {
-    mid: 'notouchy',
-  }
-
-  sayhi() {
-    console.log('hi')
+    midIsActive: false,
+    bstripeTop: '#3f77b0',
+    bstripeBot: '#014b96',
   }
 
   render() {
@@ -28,7 +26,10 @@ class Layout extends React.Component {
         </div>
         <div id="break" />
         <div id="middle">
-          <div className="bstripe-top" />
+          <div
+            className="bstripe-top"
+            style={{ background: this.state.bstripeTop }}
+          />
           <div className="cap-logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -226,9 +227,29 @@ class Layout extends React.Component {
             </svg>
           </div>
           <div className="show-code">SHOW CODE</div>
-          <div className="bstripe-bot" />
+          <div
+            style={{ background: this.state.bstripeBot }}
+            className="bstripe-bot"
+          />
           <div className="mid-text">1 LOCAL</div>
-          <div className="touch-mid" onClick={this.sayhi} />
+          <div
+            className="touch-mid"
+            onClick={e => {
+              if (!this.state.midIsActive) {
+                this.setState({
+                  bstripeTop: '#3f77b0',
+                  bstripeBot: '#014b96',
+                  midIsActive: true,
+                })
+              } else {
+                this.setState({
+                  bstripeTop: '#e95a52',
+                  bstripeBot: '#e22319',
+                  midIsActive: false,
+                })
+              }
+            }}
+          />
         </div>
         <div id="break" />
         <div id="bottom">

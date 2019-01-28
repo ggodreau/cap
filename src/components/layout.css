@@ -111,7 +111,7 @@ body {
   top: -109%;
   height: 100%;
   width: 100%;
-  background: purple;
+  background: transparent;
   opacity: 0.3;
 }
 .bot-text {
