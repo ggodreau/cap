@@ -265,7 +265,23 @@ class Layout extends React.Component {
             className="fstripe-bot"
             style={{ background: this.state.fstripeBot }}
           />
-          <div className="bot-text shim1">{this.state.fdate.toString()}</div>
+          <div className="bot-text shim1">
+            {this.state.fdate.toLocaleDateString()} at{' '}
+            {this.state.fdate
+              .toLocaleTimeString()
+              .split('')
+              .reverse()
+              .splice(6)
+              .reverse()
+              .join('')}{' '}
+            {this.state.fdate
+              .toLocaleTimeString()
+              .split('')
+              .reverse()
+              .splice(0, 2)
+              .reverse()
+              .join('')}
+          </div>
           <div className="bot-text shim2">Ticket Expiration Date</div>
           <div
             className="touch-bot"
