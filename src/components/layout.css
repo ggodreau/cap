@@ -81,13 +81,13 @@ body {
   margin: 0;
   z-index: 0;
   opacity: 0.7;
-  animation: logo 5s steps(300, end) 0s infinite;
+  animation: logo 5s steps(150, end) 0s infinite;
 }
 .cap-text {
   font-family: 'Lucida Grande', sans-serif;
   z-index: 1;
   position: relative;
-  top: -205%;
+  top: -167%;
   width: 100%;
   text-align: center;
   color: white;

@@ -22,10 +22,10 @@ class Layout extends React.Component {
           <div className="ustripe-top" />
           <div className="ustripe-bot-bg" />
           <div className="ustripe-bot" />
-          <div className="tick-top" />
-          <div className="tick-bot" />
-          <div className="notch-top" />
-          <div className="notch-bot" />
+          {/*<div className="tick-top" />*/}
+          {/*<div className="tick-bot" />*/}
+          {/*<div className="notch-top" />*/}
+          {/*<div className="notch-bot" />*/}
           <div className="cap-text">CAPITAL METRO</div>
         </div>
         <div id="break" />
@@ -239,6 +239,7 @@ class Layout extends React.Component {
           <div
             className="touch-mid"
             onClick={e => {
+              console.log('mid clicked')
               if (this.state.midIsActive) {
                 this.setState({
                   bstripeTop: '#3f77b0',
@@ -286,6 +287,7 @@ class Layout extends React.Component {
           <div
             className="touch-bot"
             onClick={e => {
+              console.log('footer clicked')
               if (this.state.fIsActive) {
                 this.setState({
                   fstripeTop: '#b2b2b2',
