@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   overflow: hidden;
-  height: 100vh;
+  max-height: 100%;
 }
 #parent {
   top: 0;
@@ -41,6 +41,7 @@ body {
   width: 100%;
   background: green;
   opacity: 1;
+  overflow: hidden;
 }
 #bottom {
   height: 14%;
